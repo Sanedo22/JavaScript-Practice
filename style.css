@@ -10,9 +10,7 @@
 
 .heading, .horizontal-shaking {
     animation: horizontal-shaking 3s ;
-    color: red;
-    font-size: 40px;
-
+    color: rgb(238, 255, 0);
 }
 
 @keyframes horizontal-shaking {

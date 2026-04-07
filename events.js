@@ -1,9 +1,10 @@
 let btn = document.getElementById('btn');
+let head = document.getElementById('heading');
 let mode = 'light';
 let body = document.querySelector('body');
 
-btn.addEventListener('click', () =>{
-    if(mode === 'light'){
+btn.addEventListener('click', () => {
+    if (mode === 'light') {
         body.classList.remove('light');
         body.classList.add('dark');
         mode = 'dark';
@@ -12,5 +13,13 @@ btn.addEventListener('click', () =>{
         body.classList.add('light');
         mode = 'light';
     }
+    console.log('Current mode:', mode);
 });
-console.log(mode);
+
+head.addEventListener('mouseover', () => {
+    head.classList.add('heading');
+});
+
+head.addEventListener('mouseout', () => {
+    head.classList.remove('heading');
+});

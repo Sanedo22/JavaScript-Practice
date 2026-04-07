@@ -7,3 +7,18 @@
     color: black;
     background-color: white;
 }
+
+.heading, .horizontal-shaking {
+    animation: horizontal-shaking 3s ;
+    color: red;
+    font-size: 40px;
+
+}
+
+@keyframes horizontal-shaking {
+ 0% { transform: translateX(0) }
+ 25% { transform: translateX(5px) }
+ 50% { transform: translateX(-5px) }
+ 75% { transform: translateX(5px) }
+ 100% { transform: translateX(0) }
+}

@@ -11,7 +11,7 @@ body{
     background-color: #000;
 }
 
-container{
+.container{
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -19,12 +19,12 @@ container{
     gap: 20px;
 }
 
-container h2{
+.container h2{
     color: #fff;
     font-size: 32px;
 }
 
-game{
+.game{
     display: grid;
     grid-template-columns: repeat(3, 100px);
     grid-template-rows: repeat(3, 100px);
@@ -37,6 +37,7 @@ game{
 .box{
     width: 100px;
     height: 100px;
+    color: black;
     border: 2px solid #fff;
     background-color: #fff;
     font-size: 40px;
@@ -50,4 +51,34 @@ game{
 
 .box:hover{
     background-color: #f0f0f0;
+}
+
+.hidden{
+    display: none;
+}
+
+#winner{
+    color: #fff;
+    font-size: 24px;
+    font-weight: bold;
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    border-radius: 5px;
+    text-align: center;
+}
+
+#reset{
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    font-size: 18px;
+    transition: all 0.3s ease;
+}
+
+#reset:hover{
+    background-color: #f0f0f0;
+    color: #333;
 }

@@ -1,5 +1,7 @@
 // let cars = ["BMW", "Audi", "Mercedes", "Tesla"];
 
+import { log } from "node:console";
+
 // for (let i = 0; i < cars.length; i++){
 //     console.log(cars[i]);
 // }
@@ -58,12 +60,22 @@
 // fruits.push("gauva");
 // console.log(fruits);
 
-let nums = [1];
+// let nums = [1];
 
-nums[0] = 5;
-nums[19] = 10;
-nums[27] = 15;
+// nums[0] = 5;
+// nums[19] = 10;
+// nums[27] = 15;
 
-console.log(nums);
-nums[0] = "Name";
-console.log(nums);
+// console.log(nums);
+// nums[0] = "Name";
+// console.log(nums);
+
+let nums = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+
+let res = nums.filter( num => num % 2 === 0)
+    .map( n => n * 2 )
+    .reduce((a,b) => a+b)
+    // .forEach( numb => console.log(numb) );
+
+    console.log(res);
+    

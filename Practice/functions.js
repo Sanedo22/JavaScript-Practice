@@ -9,6 +9,8 @@
 //     return count;
 // }
 
+import { log } from "console";
+
 
 //foreach loop, it is used for normal calc and print the array
 // let numbers = [11127881, 2, 3, 4, 5];
@@ -71,3 +73,38 @@
 //     return prev * curr;
 // });
 // console.log("factorial:", factorial);
+
+// let num = 0;
+
+// function show(){
+//     console.log(num);
+//     num++;
+//     while(num <= 10){
+//     show();
+//     }
+//     }
+
+// show();
+
+// function facto (){
+//     let fact = 1;
+//     for(let i=1; i<=num; i++){
+//         console.log(`${fact} * ${i} = ${fact * i}`);
+//         fact = fact * i;
+//         }
+//         console.log(`factorial of ${num} is ${fact}`);      
+// }
+// facto();
+
+//using recursion
+function fact(n) {
+    if (n==0){
+        return 1;
+    } else {
+        return n * fact(n-1)
+    }
+}
+
+let num = 5;
+let res = fact(num);
+console.log(res);

@@ -42,7 +42,7 @@
 // }
 
 // array methods
-let fruits = ["Apple", "Banana", "Cherry", "Date", "Elderberry"];
+// let fruits = ["Apple", "Banana", "Cherry", "Date", "Elderberry"];
 // fruits.push("Fig"); // adds an element to the end of the array
 // fruits.pop(); // removes the last element of the array
 // console.log(fruits.toString()); // converts the array to a string
@@ -57,3 +57,11 @@ let fruits = ["Apple", "Banana", "Cherry", "Date", "Elderberry"];
 // fruits.pop();
 // fruits.push("gauva");
 // console.log(fruits);
+
+let nums = [];
+
+nums[0] = 5;
+nums[19] = 10;
+nums[27] = 15;
+
+console.log(nums);

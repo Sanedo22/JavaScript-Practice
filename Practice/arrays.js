@@ -58,10 +58,12 @@
 // fruits.push("gauva");
 // console.log(fruits);
 
-let nums = [];
+let nums = [1];
 
 nums[0] = 5;
 nums[19] = 10;
 nums[27] = 15;
 
+console.log(nums);
+nums[0] = "Name";
 console.log(nums);

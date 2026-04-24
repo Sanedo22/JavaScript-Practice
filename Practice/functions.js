@@ -11,6 +11,8 @@
 
 import { log } from "console";
 
+// import { log } from "console";
+
 
 //foreach loop, it is used for normal calc and print the array
 // let numbers = [11127881, 2, 3, 4, 5];
@@ -97,14 +99,39 @@ import { log } from "console";
 // facto();
 
 //using recursion
-function fact(n) {
-    if (n==0){
-        return 1;
-    } else {
-        return n * fact(n-1)
+// function fact(n) {
+//     if (n==0){
+//         return 1;
+//     } else {
+//         return n * fact(n-1)
+//     }
+// }
+
+// let num = 5;
+// let res = fact(num);
+// console.log(res);
+
+// let obj = {value: 10};
+
+// function inc(obj){
+//     obj.value++;
+// }
+
+// inc(obj);
+// console.log(obj);
+
+function add () {
+    let x = 5;
+    function sum () {
+        let y = 10;
+        console.log(x);
+        return x + y;
+        
     }
+    console.log(x);
+    
+    let res = sum();
+    console.log(res);
 }
 
-let num = 5;
-let res = fact(num);
-console.log(res);
+add();

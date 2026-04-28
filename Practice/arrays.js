@@ -93,7 +93,7 @@ import { log } from "node:console";
 // console.log([a,b] = [b,a]);
 
 // rev the array
-let arr = [3,2,5,8,1];
+let arr = [0,0,0,,1,,];
 let n = arr.length;
 let i = 0;
 let j = n-1;

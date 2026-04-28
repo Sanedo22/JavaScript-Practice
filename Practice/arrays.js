@@ -93,23 +93,34 @@ import { log } from "node:console";
 // console.log([a,b] = [b,a]);
 
 // rev the array
-let arr = [0,0,0,,1,,];
-let n = arr.length;
-let i = 0;
-let j = n-1;
+// let arr = [0,0,0,,1,,];
+// let n = arr.length;
+// let i = 0;
+// let j = n-1;
 
-function revArray(arr) {
-    while (i <= j) {
-        let temp = arr[i];
-        arr[i] = arr[j]
-        arr[j] = temp;
-        i++;
-        j--;
-    }
-    return arr;
+// function revArray(arr) {
+//     while (i <= j) {
+//         let temp = arr[i];
+//         arr[i] = arr[j]
+//         arr[j] = temp;
+//         i++;
+//         j--;
+//     }
+//     return arr;
+// }
+
+// let res = revArray(arr);
+// console.log(res);
+
+// filter array for multiple values
+let arr = [ 0,0,0,1,"dhruv","Dhruv",1,1,2,2,5,5,];
+
+function filtArray(arr) {
+    let newArray = arr.filter((curr, next) => arr.indexOf(curr) === next);
+    console.log(newArray);
+    
 }
+filtArray(arr);
 
-let res = revArray(arr);
-console.log(res);
 
     

@@ -70,12 +70,46 @@ import { log } from "node:console";
 // nums[0] = "Name";
 // console.log(nums);
 
-let nums = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+// let nums = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
 
-let res = nums.filter( num => num % 2 === 0)
-    .map( n => n * 2 )
-    .reduce((a,b) => a+b)
-    // .forEach( numb => console.log(numb) );
+// let res = nums.filter( num => num % 2 === 0)
+//     .map( n => n * 2 )
+//     .reduce((a,b) => a+b)
+//     // .forEach( numb => console.log(numb) );
 
-    console.log(res);
+// //     console.log(res);
+
+// let arr = [1,2,3];
+// let str = "1,2,3";
+// console.log(arr == str);
+
+// let a  = 10;
+// let b = 5;
+
+// // let temp = a ;
+// // let b = a ;
+// console.log(`before swap ${a} and ${b}`);
+
+// console.log([a,b] = [b,a]);
+
+// rev the array
+let arr = [3,2,5,8,1];
+let n = arr.length;
+let i = 0;
+let j = n-1;
+
+function revArray(arr) {
+    while (i <= j) {
+        let temp = arr[i];
+        arr[i] = arr[j]
+        arr[j] = temp;
+        i++;
+        j--;
+    }
+    return arr;
+}
+
+let res = revArray(arr);
+console.log(res);
+
     

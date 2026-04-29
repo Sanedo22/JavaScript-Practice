@@ -122,23 +122,23 @@ import { log } from "node:console";
 // }
 // filtArray(arr);
 
-let arr = [3,5,8,9,10,5];
+// let arr = [3,5,8,9,10,5];
 
-function findMax(arr){
-    let max = 0;
-    for(let i = 0; i < arr.length; i++){
-        if(arr[i] > max){
-        max = arr[i];
-        }
-    }
-    return max;
-}
-console.log(findMax(arr));
+// function findMax(arr){
+//     let max = 0;
+//     for(let i = 0; i < arr.length; i++){
+//         if(arr[i] > max){
+//         max = arr[i];
+//         }
+//     }
+//     return max;
+// }
+// console.log(findMax(arr));
 
 
 let arr = [2,10,5,4,7, 10101];
 
-const output = arr.reduce(function(acc, curr){
+const output = arr.reduce((acc, curr) => {
     if(curr > acc){
         acc = curr;
     }

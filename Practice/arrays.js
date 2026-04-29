@@ -118,7 +118,7 @@ import { log } from "node:console";
 // function filtArray(arr) {
 //     let newArray = arr.filter((curr, next) => arr.indexOf(curr) === next);
 //     console.log(newArray);
-    
+
 // }
 // filtArray(arr);
 
@@ -135,17 +135,48 @@ import { log } from "node:console";
 // }
 // console.log(findMax(arr));
 
+// let arr = [2,10,5,4,7, 10101];
 
-let arr = [2,10,5,4,7, 10101];
+// const output = arr.reduce((acc, curr) => {
+//     if(curr > acc){
+//         acc = curr;
+//     }
+//     return acc;
+// }, 0);
+// console.log(output);
 
-const output = arr.reduce((acc, curr) => {
-    if(curr > acc){
-        acc = curr;
+// let arr = ["hi", "hello", "dhruv", "js"];
+
+// let rev = arr.slice(2).map(str => str.split("").reverse().join("")).toReversed();
+
+// console.log(rev);
+
+let users = [
+  { firstname: "dhruv", lastname: "patni", age: 20 },
+  { firstname: "sandeep", lastname: "pal", age: 23 },
+  { firstname: "rahul", lastname: "solanki", age: 20 },
+  { firstname: "kuldeep", lastname: "rathod", age: 23 },
+  { firstname: "jay", lastname: "patel", age: 35 },
+];
+
+// let output = users.reduce((res, curr) => {
+//     if(acc[curr.age]){
+//         acc[curr.age] = ++acc[curr.age];
+//     }
+//     else {
+//         acc[curr.age] = 1;
+//     }
+//     return acc;
+// }, {})
+// console.log(output);
+
+// let output = users.filter((x) => x.age <= 20).map((x) => x.firstname);
+
+let output = users.reduce((acc, curr) => {
+    if(curr.age <= 20){
+        acc.push(curr.firstname);
     }
     return acc;
-}, 0);
+}, [])
+
 console.log(output);
-
-
-
-    

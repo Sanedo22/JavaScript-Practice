@@ -172,11 +172,64 @@ let users = [
 
 // let output = users.filter((x) => x.age <= 20).map((x) => x.firstname);
 
-let output = users.reduce((acc, curr) => {
-    if(curr.age <= 20){
-        acc.push(curr.firstname);
-    }
-    return acc;
-}, [])
+// let output = users.reduce((acc, curr) => {
+//     if(curr.age <= 20){
+//         acc.push(curr.firstname);
+//     }
+//     return acc;
+// }, [])
 
-console.log(output);
+// console.log(output);
+
+// const bids = [
+//   {user: 'Dhruv', amount: 100}, 
+//   {user: 'Saurav', amount: 150}, 
+//   {user: 'Dhruv', amount: 200}
+// ];
+
+// function value(bids)
+// {
+//     let res = {};
+//     for(let i of bids){
+//         let name = i.user;
+//         let amount = i.amount;
+
+//     if(res[name]){
+//         res[name] += amount;
+//     }
+//     else{
+//         res[name] = amount
+//     }
+// }
+// return res;
+// }
+
+// const res = value(bids);
+
+// console.log(res);
+
+// const result = bids.reduce((acc, bid) => {
+//     if(acc[bid.user]){
+//         acc[bid.user] += bid.amount;
+//     }
+//     else {
+//         acc[bid.user] = bid.amount
+//     }
+//     return acc;
+// }, {});
+
+// console.log(result);
+
+
+
+
+//output {"dhruv" : 300, "Suarav": 150}
+
+let bids = [100, "200", 50, "abc", 300];
+
+let storage = [];
+for(let bid of bids){
+    if(parseInt(bid) === Number){
+        storage.push(bid);
+    }
+}

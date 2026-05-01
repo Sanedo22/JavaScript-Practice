@@ -151,13 +151,13 @@ import { log } from "node:console";
 
 // console.log(rev);
 
-let users = [
-  { firstname: "dhruv", lastname: "patni", age: 20 },
-  { firstname: "sandeep", lastname: "pal", age: 23 },
-  { firstname: "rahul", lastname: "solanki", age: 20 },
-  { firstname: "kuldeep", lastname: "rathod", age: 23 },
-  { firstname: "jay", lastname: "patel", age: 35 },
-];
+// let users = [
+//   { firstname: "dhruv", lastname: "patni", age: 20 },
+//   { firstname: "sandeep", lastname: "pal", age: 23 },
+//   { firstname: "rahul", lastname: "solanki", age: 20 },
+//   { firstname: "kuldeep", lastname: "rathod", age: 23 },
+//   { firstname: "jay", lastname: "patel", age: 35 },
+// ];
 
 // let output = users.reduce((res, curr) => {
 //     if(acc[curr.age]){

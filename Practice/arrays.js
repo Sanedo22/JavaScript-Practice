@@ -229,7 +229,12 @@ let bids = [100, "200", 50, "abc", 300];
 
 let storage = [];
 for(let bid of bids){
-    if(parseInt(bid) === Number){
-        storage.push(bid);
+    let converted = Number(bid);
+
+    if (!Number.isNaN(converted)){
+        storage.push(converted);
     }
-}
+    }
+
+    console.log(storage);
+    

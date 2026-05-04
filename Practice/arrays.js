@@ -359,30 +359,36 @@
 //  let res = sum.calculate("10 + 8")
 // console.log(res);
 
-function Calculator() {
-  this.methods = {
-    "+": (a, b) => a + b,
-    "-": (a, b) => a - b,
-  };
+// function Calculator() {
+//   this.methods = {
+//     "+": (a, b) => a + b,
+//     "-": (a, b) => a - b,
+//   };
 
-  this.calculate = function (str) {
-    let split = str.split(" "),
-      a = +split[0],
-      op = split[1],
-      b = +split[2];
+//   this.calculate = function (str) {
+//     let split = str.split(" "),
+//       a = +split[0],
+//       op = split[1],
+//       b = +split[2];
 
-    if (!this.methods[op] || isNaN(a) || isNaN(b)) {
-      return NaN;
-    }
-    return this.methods[op](a, b);
-  };
+//     if (!this.methods[op] || isNaN(a) || isNaN(b)) {
+//       return NaN;
+//     }
+//     return this.methods[op](a, b);
+//   };
 
-  this.addMethod = function (name, func) {
-    this.methods[name] = func;
-  };
+//   this.addMethod = function (name, func) {
+//     this.methods[name] = func;
+//   };
+// }
+
+// let calc = new Calculator();
+
+// let sum = calc.calculate("10 - 9");
+// console.log(sum);
+
+let a = "";
+
+if (a === ""){
+    console.log(`string is empty`);   
 }
-
-let calc = new Calculator();
-
-let sum = calc.calculate("10 - 9");
-console.log(sum);

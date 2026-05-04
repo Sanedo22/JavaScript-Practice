@@ -302,12 +302,87 @@
 //   return a - b;
 // });
 
-let arr = "my-long-word";
+// let arr = "my-long-word";
 
-function long(arr) {
+// function long(arr) {
 
-    return arr.split('-').map((word, index) => index == 0 ? word : word[0].toUpperCase() + word.slice(1)).join('');
+//     return arr.split('-').map((word, index) => index == 0 ? word : word[0].toUpperCase() + word.slice(1)).join('');
+// }
+
+// let res = long(arr);
+// console.log(res);
+
+// let arr = [1,5,7,9,];
+
+// function filterRange(arr,a,b) {
+//     return arr.filter(item => (a <= item && item <= b));
+// }
+
+// let filtered = filterRange(arr, 5, 8);
+// console.log(filtered);
+
+// let arr = [5, 2, 1, -10, 8];
+
+// function sorting(arr) {
+//     return arr.slice().sort((a,b) => b - a);
+// }
+
+// let sorted = sorting(arr);
+// console.log(sorted);
+// console.log(arr);
+
+// function Calculator () {
+//     this.methods = {
+//         "-": (a,b) => a - b,
+//         "+": (a,b) => a + b
+//     };
+
+//     this.calculate = function(str){
+//         let split = str.split(' '),
+//         a = +split[0],
+//         op = split[1],
+//         b = +split[2];
+
+//         if(!this.methods[op] || isNaN(a) || isNaN(b)){
+//             return NaN;
+//         }
+
+//         return this.methods[op](a,b);
+//     };
+
+//     this.addMethod = function(name, func) {
+//         this.method[name] = func;
+//     };
+// }
+
+// let sum = new Calculator;
+//  let res = sum.calculate("10 + 8")
+// console.log(res);
+
+function Calculator() {
+  this.methods = {
+    "+": (a, b) => a + b,
+    "-": (a, b) => a - b,
+  };
+
+  this.calculate = function (str) {
+    let split = str.split(""),
+      a = +split[0],
+      op = split[1],
+      b = +split[2];
+
+    if (!this.methods[op] || isNaN(a) || isNaN(b)) {
+      return NaN;
+    }
+    return this.methods[op](a, b);
+  };
+
+  this.addMethod = function (name, func) {
+    this.methods[name] = func;
+  };
 }
 
-let res = long(arr);
-console.log(res);
+let calc = new Calculator();
+
+let sum = calc.calculate("10 - 9");
+console.log(sum);

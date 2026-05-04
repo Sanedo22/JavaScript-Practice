@@ -280,15 +280,34 @@
 
 // chain.up().up().down().showStep().down().showStep();
 
-function Accumulator(startingValue) {
-        this.value = startingValue;
+// function Accumulator(startingValue) {
+//         this.value = startingValue;
 
-        this.read = function() {
-            this.value += +prompt("enter value", 0);
-        };
+//         this.read = function() {
+//             this.value += +prompt("enter value", 0);
+//         };
+// }
+
+// let acc = new Accumulator(0);
+// acc.read();
+// acc.read();
+// alert(acc.value);
+
+// let a = [5];
+// let b = "dhruv"
+// console.log(a-b);
+
+// [1, -2, 15, 2, 0, 8].sort(function(a, b) {
+//   alert( a + " <> " + b );
+//   return a - b;
+// });
+
+let arr = "my-long-word";
+
+function long(arr) {
+
+    return arr.split('-').map((word, index) => index == 0 ? word : word[0].toUpperCase() + word.slice(1)).join('');
 }
 
-let acc = new Accumulator(0);
-acc.read();
-acc.read();
-alert(acc.value);
+let res = long(arr);
+console.log(res);

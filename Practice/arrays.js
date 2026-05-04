@@ -235,9 +235,9 @@ import { log } from "node:console";
 
 // console.log(storage);
 
-const a = {name: "dhruv"};
+// const a = {name: "dhruv"};
 
-a.name = "sandeep";
-// a.name = 69;
+// a.name = "sandeep";
+// // a.name = 69;
 
-console.log(a);
+// console.log(a);

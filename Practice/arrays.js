@@ -182,8 +182,8 @@ import { log } from "node:console";
 // console.log(output);
 
 // const bids = [
-//   {user: 'Dhruv', amount: 100}, 
-//   {user: 'Saurav', amount: 150}, 
+//   {user: 'Dhruv', amount: 100},
+//   {user: 'Saurav', amount: 150},
 //   {user: 'Dhruv', amount: 200}
 // ];
 
@@ -220,21 +220,24 @@ import { log } from "node:console";
 
 // console.log(result);
 
-
-
-
 //output {"dhruv" : 300, "Suarav": 150}
 
-let bids = [100, "200", 50, "abc", 300];
+// let bids = [100, "200", 50, "abc", 300];
 
-let storage = [];
-for(let bid of bids){
-    let converted = Number(bid);
+// let storage = [];
+// for (let bid of bids) {
+//   let converted = Number(bid);
 
-    if (!Number.isNaN(converted)){
-        storage.push(converted);
-    }
-    }
+//   if (!Number.isNaN(converted)) {
+//     storage.push(converted);
+//   }
+// }
 
-    console.log(storage);
-    
+// console.log(storage);
+
+const a = {name: "dhruv"};
+
+a.name = "sandeep";
+// a.name = 69;
+
+console.log(a);

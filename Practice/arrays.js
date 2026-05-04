@@ -1,6 +1,6 @@
 // let cars = ["BMW", "Audi", "Mercedes", "Tesla"];
 
-import { log } from "node:console";
+// import { log } from "node:console";
 
 // for (let i = 0; i < cars.length; i++){
 //     console.log(cars[i]);
@@ -241,3 +241,54 @@ import { log } from "node:console";
 // // a.name = 69;
 
 // console.log(a);
+
+// let calculator = {
+//     read() {
+//         this.a = +prompt("enter first number", 0);
+//         this.b = +prompt("enter second number", 0);
+//     },
+
+//     sum() {
+//         return this.a + this.b;
+//     },
+
+//     mul() {
+//         return this.a * this.b;
+//     },
+// };
+
+// calculator.read();
+// alert(calculator.sum());
+// alert(calculator.mul());
+
+// let chain = {
+//   step: 0,
+//   up() {
+//     this.step++;
+//     return this;
+//   },
+
+//   down() {
+//     this.step--;
+//     return this;
+//   },
+//   showStep() {
+//     console.log(this.step);
+//     return this;
+//   },
+// };
+
+// chain.up().up().down().showStep().down().showStep();
+
+function Accumulator(startingValue) {
+        this.value = startingValue;
+
+        this.read = function() {
+            this.value += +prompt("enter value", 0);
+        };
+}
+
+let acc = new Accumulator(0);
+acc.read();
+acc.read();
+alert(acc.value);

@@ -366,7 +366,7 @@ function Calculator() {
   };
 
   this.calculate = function (str) {
-    let split = str.split(""),
+    let split = str.split(" "),
       a = +split[0],
       op = split[1],
       b = +split[2];

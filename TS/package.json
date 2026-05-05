@@ -1,0 +1,15 @@
+{
+  "name": "ts",
+  "version": "1.0.0",
+  "description": "",
+  "license": "ISC",
+  "author": "",
+  "type": "commonjs",
+  "main": "app.js",
+  "scripts": {
+    "start": "nodemon -watch"
+  },
+  "dependencies": {
+    "nodemon": "^3.1.14"
+  }
+}

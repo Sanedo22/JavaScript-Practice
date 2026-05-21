@@ -1,4 +1,4 @@
-// let cars = ["BMW", "Audi", "Mercedes", "Tesla"];
+let cars = ["BMW", "Audi", "Mercedes", "Tesla"];
 
 // import { log } from "node:console";
 

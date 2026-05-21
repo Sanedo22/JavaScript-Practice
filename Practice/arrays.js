@@ -21,7 +21,7 @@ let cars = ["BMW", "Audi", "Mercedes", "Tesla"];
 // }
 
 // avg of numbers in an array
-// let nums = [10, 22, 34, 46, 57];
+let nums = [10, 22, 34, 46, 57];
 
 // let sum = 0;
 
